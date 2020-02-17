@@ -1,0 +1,2 @@
+include ':app', ':extensions'
+rootProject.name='ALExtensions-android'
