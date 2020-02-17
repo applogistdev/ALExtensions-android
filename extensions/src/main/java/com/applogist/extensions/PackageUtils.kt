@@ -9,7 +9,7 @@ import android.util.Log
 *  Copyright © 2020 Mustafa Ürgüplüoğlu. All rights reserved.
 */
 
-fun Context.isAppInstalled(): Boolean = try {
+fun Context.isAppInstalled(packageName : String): Boolean = try {
     packageManager.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES)
     true
 } catch (e: PackageManager.NameNotFoundException) {
