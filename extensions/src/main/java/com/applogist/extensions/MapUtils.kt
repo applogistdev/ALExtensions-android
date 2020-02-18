@@ -57,3 +57,10 @@ fun Context.openGoogleMaps(latitude: Double, longitude: Double): Boolean = try {
     Log.e("MapUtils", e.toString())
     false
 }
+
+fun Context.openMapAppsChooser(latitude: Double, longitude: Double){
+    val uri = Uri.parse("geo:${latitude},${longitude}")
+    val intent = Intent(Intent.ACTION_VIEW, uri)
+    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+    startActivity(intent)
+}
