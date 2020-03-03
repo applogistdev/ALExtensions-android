@@ -20,3 +20,5 @@ dependencies {
   
 |[isAppInstalled](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/PackageUtils.kt#L15)|Use package name to find is app installed|  
 |--|--|
+|[openGooglePlayStore](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/PackageUtils.kt#L23)|Open Google Play Market, parameter tryWithWebView if fail open with browser|  
+|--|--|
