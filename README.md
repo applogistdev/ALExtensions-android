@@ -21,4 +21,8 @@ dependencies {
 |[isAppInstalled](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/PackageUtils.kt#L15)|Use package name to find is app installed|  
 |--|--|
 |[openGooglePlayStore](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/PackageUtils.kt#L23)|Open Google Play Market, parameter tryWithWebView if fail open with browser|  
+
+  ## [SocialMediaUtils](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/SocialMediaUtils.kt)  
+  
+|[openFacebookPage](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/SocialMediaUtils.kt#L17)|Open facebook page with Facebook Page Id|  
 |--|--|
