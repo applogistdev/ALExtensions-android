@@ -13,14 +13,19 @@ import java.util.*
  * @param pattern the pattern describing the date and time format
  * @param locale the locale whose date format symbols should be used
  * @param ifNull if you give null, when error happened
+ * @param timeZone the given new time zone
  * function return null otherwise return today date
  */
 fun String.toDate(
     pattern: String,
     locale: Locale = Locale.getDefault(),
-    ifNull: Date? = Date()
+    ifNull: Date? = Date(),
+    timeZone: TimeZone? = null
 ): Date? {
     val format = SimpleDateFormat(pattern, locale)
+    if(timeZone != null){
+        format.timeZone = timeZone
+    }
     return try {
         format.parse(this) ?: ifNull
     } catch (e: ParseException) {
@@ -28,3 +33,4 @@ fun String.toDate(
         ifNull
     }
 }
+
