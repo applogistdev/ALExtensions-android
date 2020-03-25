@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.util.Log
+import java.util.*
 
 /*
 *  Created by Mustafa Ürgüplüoğlu on 17.02.2020.
@@ -58,9 +59,8 @@ fun Context.openGoogleMaps(latitude: Double, longitude: Double): Boolean = try {
     false
 }
 
-fun Context.openMapAppsChooser(latitude: Double, longitude: Double){
-    val uri = Uri.parse("geo:${latitude},${longitude}")
-    val intent = Intent(Intent.ACTION_VIEW, uri)
-    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-    startActivity(intent)
+fun Context.openMapAppsChooser(latitude: Double, longitude: Double, title : String = "Select your maps app"){
+    val uri = String.format(Locale.ENGLISH, "geo:%f,%f", latitude, longitude)
+    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
+    startActivity(Intent.createChooser(intent, title))
 }
