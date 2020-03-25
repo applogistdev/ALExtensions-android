@@ -31,7 +31,7 @@ fun Context.openFacebookPage(facebookPageID : String): Boolean {
             startActivity(intent)
         }
         return true
-    } catch (e: PackageManager.NameNotFoundException) {
+    } catch (e: Exception) {
         Log.e("SocialMediaUtils", e.toString())
     }
 
