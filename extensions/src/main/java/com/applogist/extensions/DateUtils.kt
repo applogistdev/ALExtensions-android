@@ -100,7 +100,7 @@ fun String.convertToMillis(sendingDatePattern : String, locale : Locale = Locale
  * Convert long millis to date
  * @param dateFormat : Desired date format
  */
-fun Long.convertDate(dateFormat: SimpleDateFormat): String? {
+fun Long.convertDateString(dateFormat: SimpleDateFormat): String? {
     val date: Date?
     try {
         date = Date(this)
@@ -115,7 +115,7 @@ fun Long.convertDate(dateFormat: SimpleDateFormat): String? {
  * Convert long millis to date
  * @param dateFormatPattern : Desired date format pattern
  */
-fun Long.convertDate(dateFormatPattern: String, locale : Locale = Locale.getDefault()): String? {
+fun Long.convertDateString(dateFormatPattern: String, locale : Locale = Locale.getDefault()): String? {
     val comingDateFormat = SimpleDateFormat(dateFormatPattern, locale)
     val date: Date?
     try {
@@ -125,4 +125,24 @@ fun Long.convertDate(dateFormatPattern: String, locale : Locale = Locale.getDefa
         return null
     }
     return comingDateFormat.format(date)
+}
+
+/**
+ * @param pattern the pattern describing the date and time format
+ * @param locale the locale whose date format symbols should be used
+ * @param ifNull if you give null, when error happened
+ * function return null otherwise return today date
+ * @param timeZone the given new time zone
+ */
+fun String.toDate(pattern: String, locale: Locale = Locale.getDefault(), ifNull: Date? = Date(), timeZone: TimeZone? = null): Date? {
+    val format = SimpleDateFormat(pattern, locale)
+    if(timeZone != null){
+        format.timeZone = timeZone
+    }
+    return try {
+        format.parse(this) ?: ifNull
+    } catch (e: ParseException) {
+        e.printStackTrace()
+        ifNull
+    }
 }
