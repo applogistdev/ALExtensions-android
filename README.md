@@ -40,7 +40,8 @@ dependencies {
 |[formatDate](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/DateUtils.kt#L12)|Format string with given coming and sending date format or date format patterns| 
 |[convertDateToCalendar](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/DateUtils.kt#L46)|Convert date string to calendar object with given date format or date format pattern| 
 |[convertToMillis](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/DateUtils.kt#L87)|Convert date string to millis with given date format or date format pattern| 
-|[convertDate](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/DateUtils.kt#L103)|Convert millis to date string with given date format or date format pattern| 
+|[convertDateString](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/DateUtils.kt#L103)|Convert millis to date string with given date format or date format pattern| 
+|[toDate](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/DateUtils.kt#L137)|Convert string to date object| 
 
   ## [FileUtils](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/FileUtils.kt)  
 | function | description |
@@ -56,6 +57,7 @@ dependencies {
 |[trimAll](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/FormatUtils.kt#L33)|Remove all spaces in the string| 
 |[removeNonNumeric](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/FormatUtils.kt#L40)|Remove all non numeric characters in the string| 
 |[convertToNonTurkish](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/FormatUtils.kt#L47)|Convert turkish text to non turkish| 
+|[format](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/FormatUtils.kt#L58)|Format double with given pattern and separators
 |[currencyFormat](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/FormatUtils.kt#L69)|Convert to currency format| 
 
   ## [MapUtils](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/MapUtils.kt)  
@@ -101,6 +103,7 @@ dependencies {
 |[setOnSingleClickListener](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/ViewUtils.kt#L33)|Prevents double view click action|
 |[setHtmlText](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/ViewUtils.kt#L47)|Set HTML text to TextView|
 |[setTextColorRes](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/ViewUtils.kt#L57)|Change text color of TextView|
+|[setMargin](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/ViewUtils.kt#L64)|Change margins of the view|
 
 ## Helpers
   ## [Common](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/helpers/Common.kt)  
