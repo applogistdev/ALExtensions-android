@@ -54,7 +54,7 @@ fun String.convertToNonTurkish(locale : Locale = Locale.getDefault()): String {
  * 5000 -> 5.000
  * @param dfPattern : Decimal format pattern
  */
-fun Double.formatStep(dfPattern : String = "###,###.###", decimalSeparator : Char = '.', groupingSeparator : Char = '.'): String {
+fun Double.format(dfPattern : String = "###,###.###", decimalSeparator : Char = '.', groupingSeparator : Char = '.'): String {
     val symbols = DecimalFormatSymbols()
     symbols.decimalSeparator = decimalSeparator
     symbols.groupingSeparator = groupingSeparator

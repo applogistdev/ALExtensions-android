@@ -2,6 +2,7 @@ package com.applogist.extensions
 
 import android.content.Context
 import android.view.View
+import android.view.ViewGroup
 import android.widget.TextView
 import androidx.annotation.ColorRes
 import androidx.core.content.ContextCompat
@@ -55,3 +56,17 @@ internal fun Context.getColorCompat(@ColorRes color: Int) = ContextCompat.getCol
  * @params resId of color
  */
 fun TextView.setTextColorRes(@ColorRes color: Int) = setTextColor(context.getColorCompat(color))
+
+/**
+ * Change margins of the view
+ * Values will be converted to dp inside
+ */
+fun View.setMargin(leftMargin: Int = -1, topMargin : Int = -1, rightMargin : Int = -1, bottomMargin : Int = -1) {
+    val params = layoutParams as ViewGroup.MarginLayoutParams
+    params.setMargins(
+        if (leftMargin == -1) params.leftMargin else leftMargin.px,
+        if (topMargin == -1) params.topMargin else topMargin.px,
+        if (rightMargin == -1) params.rightMargin else rightMargin.px,
+        if (bottomMargin == -1) params.bottomMargin else bottomMargin.px)
+    layoutParams = params
+}
