@@ -24,3 +24,4 @@ fun Context.openPhoneDialer(phoneNumber: String): Boolean = try {
     Log.e("PhoneUtils", e.toString())
     false
 }
+
