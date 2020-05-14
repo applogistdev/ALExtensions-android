@@ -105,6 +105,12 @@ dependencies {
 |[setTextColorRes](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/ViewUtils.kt#L57)|Change text color of TextView|
 |[setMargin](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/ViewUtils.kt#L64)|Change margins of the view|
 
+  ## [RegexUtils](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/RegexUtils.kt)  
+  
+| function | description |
+|--|--|
+|[isTurkishMobileNumber](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/ViewUtils.kt#L16)|Check phone number is valid Turkish mobile phone number|
+
 ## Helpers
   ## [Common](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/helpers/Common.kt)  
   
