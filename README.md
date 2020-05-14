@@ -109,7 +109,7 @@ dependencies {
   
 | function | description |
 |--|--|
-|[isTurkishMobileNumber](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/ViewUtils.kt#L16)|Check phone number is valid Turkish mobile phone number|
+|[isTurkishMobileNumber](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/extensions/RegexUtils.kt#L17)|Check phone number is valid Turkish mobile phone number|
 
 ## Helpers
   ## [Common](https://github.com/applogistdev/ALExtensions-android/blob/master/extensions/src/main/java/com/applogist/helpers/Common.kt)  
