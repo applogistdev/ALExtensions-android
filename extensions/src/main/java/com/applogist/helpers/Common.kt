@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit
 /**
  * Check time difference between current time and given time
  * @param lastTime = Given time in millis format
- * @param isMinutes = different should me minutes or hour
+ * @param isMinutes = different should be minutes or hour
  * @param checkTime = amount of time difference
  */
 fun isTimePassed(lastTime : Long, isMinutes : Boolean = false, checkTime : Int = 8) : Boolean {
