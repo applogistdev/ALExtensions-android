@@ -11,9 +11,9 @@ const val REGEX_TURKISH_MOBILE = "^[0]?((5[0-9][0-9]))\\d{7}\$"
 
 /**
  * Check phone number is valid Turkish mobile phone number
- * @param phoneNumber Any string
+ * @param this Any string
  * @return true if valid
  */
-fun isTurkishMobileNumber(phoneNumber: String?) : Boolean{
-    return !phoneNumber.isNullOrEmpty() && Pattern.matches(REGEX_TURKISH_MOBILE, phoneNumber)
+fun String?.isTurkishMobileNumber() : Boolean{
+    return !this.isNullOrEmpty() && Pattern.matches(REGEX_TURKISH_MOBILE, this)
 }
