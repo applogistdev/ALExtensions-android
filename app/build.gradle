@@ -6,7 +6,7 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.applogist.extensions_sample"
         minSdkVersion 21
@@ -28,7 +28,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     //Test
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13'
     androidTestImplementation "androidx.test:core-ktx:1.2.0"
     androidTestImplementation 'androidx.test.ext:junit-ktx:1.1.1'
     androidTestImplementation "androidx.test:runner:1.2.0"

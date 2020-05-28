@@ -60,7 +60,7 @@ fun Context.openGoogleMaps(latitude: Double, longitude: Double): Boolean = try {
 }
 
 fun Context.openMapAppsChooser(latitude: Double, longitude: Double, title : String = "Select your maps app"){
-    val uri = String.format(Locale.ENGLISH, "geo:%f,%f", latitude, longitude)
+    val uri = String.format(Locale.ENGLISH, "geo:0,0?q=%f,%f", latitude, longitude)
     val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
     startActivity(Intent.createChooser(intent, title))
 }

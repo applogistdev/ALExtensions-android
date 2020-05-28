@@ -21,4 +21,10 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.applogist.extensions.test", appContext.packageName)
     }
+
+    @Test
+    fun mapChooser(){
+        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
+        appContext.openMapAppsChooser(40.989105, 28.794315)
+    }
 }
