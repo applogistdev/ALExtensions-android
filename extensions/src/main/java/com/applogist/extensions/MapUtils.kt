@@ -59,6 +59,12 @@ fun Context.openGoogleMaps(latitude: Double, longitude: Double): Boolean = try {
     false
 }
 
+/**
+ * @param latitude Location latitude
+ * @param longitude Location longitude
+ * @param Dialog chooser title
+ * @param locationName Location possible name
+ */
 fun Context.openMapAppsChooser(latitude: Double, longitude: Double, chooserTitle : String = "Select your maps app", locationName : String? = null){
     val uri = String.format(Locale.ENGLISH, "geo:%f,%f" + if(!locationName.isNullOrEmpty()) "?q=${locationName}" else "", latitude, longitude)
     val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
