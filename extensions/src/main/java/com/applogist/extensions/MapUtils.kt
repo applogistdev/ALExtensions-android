@@ -59,8 +59,8 @@ fun Context.openGoogleMaps(latitude: Double, longitude: Double): Boolean = try {
     false
 }
 
-fun Context.openMapAppsChooser(latitude: Double, longitude: Double, title : String = "Select your maps app"){
-    val uri = String.format(Locale.ENGLISH, "geo:0,0?q=%f,%f", latitude, longitude)
+fun Context.openMapAppsChooser(latitude: Double, longitude: Double, chooserTitle : String = "Select your maps app", locationName : String? = null){
+    val uri = String.format(Locale.ENGLISH, "geo:%f,%f" + if(!locationName.isNullOrEmpty()) "?q=${locationName}" else "", latitude, longitude)
     val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
-    startActivity(Intent.createChooser(intent, title))
+    startActivity(Intent.createChooser(intent, chooserTitle))
 }

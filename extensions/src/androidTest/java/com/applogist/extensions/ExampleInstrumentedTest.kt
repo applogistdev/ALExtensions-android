@@ -25,6 +25,6 @@ class ExampleInstrumentedTest {
     @Test
     fun mapChooser(){
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        appContext.openMapAppsChooser(40.989105, 28.794315)
+        appContext.openMapAppsChooser(40.9889026,28.7943153, locationName = "Turkeyana Clinic")
     }
 }
